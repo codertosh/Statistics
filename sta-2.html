@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Variable</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #ffa500;
+        }
+
+        .example {
+            background-color: #1e1e1e;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .example p {
+            margin: 0;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        code {
+            background-color: #272727;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #00ff00;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Variable</h1>
+    <p>A <strong>random variable</strong> is a numerical value assigned to the outcomes of a random experiment. It maps the outcomes of an experiment to numerical values.</p>
+
+    <h2>1. Discrete Random Variable</h2>
+    <p>A <strong>discrete random variable</strong> takes specific, countable values. It is used when the sample space consists of distinct, separate outcomes.</p>
+    <div class="example">
+        <p><strong>Example:</strong> Tossing a fair coin twice.</p>
+        <ul>
+            <li>Sample Space: {HH, HT, TH, TT}</li>
+            <li>Define a random variable <code>X</code> as the number of heads observed:</li>
+            <ul>
+                <li><code>X(HH) = 2</code></li>
+                <li><code>X(HT) = 1</code></li>
+                <li><code>X(TH) = 1</code></li>
+                <li><code>X(TT) = 0</code></li>
+            </ul>
+            <li>Possible values of <code>X</code>: {0, 1, 2}</li>
+        </ul>
+        <p><strong>Explanation:</strong> The outcomes (HH, HT, TH, TT) are distinct, and the random variable <code>X</code> assigns numerical values (0, 1, or 2) to them. These values are countable.</p>
+    </div>
+
+    <h2>2. Continuous Random Variable</h2>
+    <p>A <strong>continuous random variable</strong> takes any value within a given range. It is used when the sample space is uncountable, such as measurements of height, weight, or time.</p>
+    <div class="example">
+        <p><strong>Example:</strong> Age of a person.</p>
+        <ul>
+            <li>Suppose we measure age to the nearest fraction of a second.</li>
+            <li>The random variable <code>Y</code> could take any value in the range [0, ∞].</li>
+            <ul>
+                <li>A person's age could be 25.4 years, 30.7 years, or 55.8 years, etc.</li>
+            </ul>
+        </ul>
+        <p><strong>Explanation:</strong> Since age can take any real value in a range (e.g., between 0 and 100 years), it is a continuous random variable. Unlike discrete variables, the values are uncountable.</p>
+    </div>
+
+    <h2>Key Difference:</h2>
+    <ul>
+        <li><strong>Discrete Random Variable:</strong> Deals with countable outcomes (e.g., the number of heads in coin tosses).</li>
+        <li><strong>Continuous Random Variable:</strong> Deals with measurable, continuous outcomes (e.g., age, weight, or temperature).</li>
+    </ul>
+
+    <div class="footer">
+        <p>Designed in Dark Mode for easy reading. Let me know if you need further customization!</p>
+    </div>
+</body>
+</html>
