@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Rules in Probability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #444;
+            text-align: center;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 20px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .example {
+            background: #eef;
+            border-left: 4px solid #3399ff;
+            padding: 10px 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .formula {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+            color: #c0392b;
+        }
+
+        .key {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Rules in Probability</h1>
+
+        <h2>1. Dependent Events</h2>
+        <p><span class="key">Definition:</span> Two events are dependent if the occurrence of one affects the probability of the other.</p>
+
+        <div class="example">
+            <p><strong>Example:</strong> Drawing cards from a deck without replacement.</p>
+            <ul>
+                <li>Event A: Drawing a red card first.</li>
+                <li>Event B: Drawing a red card second.</li>
+            </ul>
+            <p>1. Probability of drawing a red card first: <span class="formula">P(A) = 26/52 = 1/2</span>.</p>
+            <p>2. Probability of drawing a red card second <strong>given</strong> the first card was red: <span class="formula">P(B|A) = 25/51</span>.</p>
+            <p>3. Probability of A and B occurring together:</p>
+            <p class="formula">P(A ∩ B) = P(A) × P(B|A) = (1/2) × (25/51) = 25/102.</p>
+        </div>
+
+        <h2>2. Independent Events</h2>
+        <p><span class="key">Definition:</span> Two events are independent if the occurrence of one does not affect the probability of the other.</p>
+
+        <div class="example">
+            <p><strong>Example:</strong> Tossing a coin and rolling a die.</p>
+            <ul>
+                <li>Event A: Getting "Heads" on the coin toss.</li>
+                <li>Event B: Rolling a 6 on the die.</li>
+            </ul>
+            <p>1. Probability of A: <span class="formula">P(A) = 1/2</span>.</p>
+            <p>2. Probability of B: <span class="formula">P(B) = 1/6</span>.</p>
+            <p>3. Probability of A and B occurring together:</p>
+            <p class="formula">P(A ∩ B) = P(A) × P(B) = (1/2) × (1/6) = 1/12.</p>
+        </div>
+
+        <h2>Summary of Formulas</h2>
+        <ul>
+            <li><span class="key">Dependent Events:</span> <span class="formula">P(A ∩ B) = P(A) × P(B|A)</span></li>
+            <li><span class="key">Independent Events:</span> <span class="formula">P(A ∩ B) = P(A) × P(B)</span></li>
+        </ul>
+    </div>
+</body>
+</html>
