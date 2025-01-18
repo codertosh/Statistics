@@ -1,87 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standard Normal Distribution</title>
-  <style>
-    body {
-      background-color: #1e1e1e;
-      color: #d4d4d4;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 20px;
-    }
-    h1, h2 {
-      color: #56b6c2;
-    }
-    h1 {
-      border-bottom: 2px solid #56b6c2;
-      padding-bottom: 10px;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    code {
-      background-color: #2d2d2d;
-      color: #c678dd;
-      padding: 4px 8px;
-      border-radius: 4px;
-    }
-    ul {
-      margin: 20px 0;
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .formula {
-      background-color: #2d2d2d;
-      color: #98c379;
-      padding: 10px;
-      border-radius: 5px;
-      margin: 15px 0;
-      display: inline-block;
-      font-size: 1.1em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Normal Distribution</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        h1 {
+            color: #ffa726;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffcc80;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .formula {
+            background-color: #1e1e1e;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", monospace;
+            overflow-x: auto;
+        }
+
+        .highlight {
+            color: #4fc3f7;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>Standard Normal Distribution</h1>
-  <h2>Why This Concept is Added:</h2>
-  <ul>
-    <li>
-      <strong>Standardization:</strong> 
-      Any normal distribution can be transformed into the <strong>standard normal distribution</strong> by converting values to <code>z-scores</code>.
-      The formula for a z-score is:
-      <div class="formula">Z = (X - μ) / σ</div>
-      Here, <code>Z</code> represents the number of standard deviations a value <code>X</code> is from the mean <code>μ</code>.
-    </li>
-    <li>
-      <strong>Universal Reference:</strong> 
-      The <strong>standard normal distribution</strong> always has a mean (<code>μ</code>) of 0 and a standard deviation (<code>σ</code>) of 1. 
-      This makes it easier to use <strong>z-tables</strong> or software tools to calculate probabilities.
-    </li>
-    <li>
-      <strong>Probability Calculations:</strong> 
-      The standard normal distribution has a predefined <strong>probability density function (PDF)</strong>:
-      <div class="formula">f(z; 0, 1) = (1 / √2π) e^(-z² / 2)</div>
-      Probabilities and cumulative areas under the curve can be derived using this single formula for any z-score.
-    </li>
-    <li>
-      <strong>Applicability:</strong>
-      Standardizing values allows you to:
-      <ul>
+    <h1>Standard Normal Distribution</h1>
+
+    <h2>Why This Concept is Important</h2>
+
+    <p>The <span class="highlight">Standard Normal Distribution</span> is a critical concept in statistics because it simplifies calculations and allows for easy comparison across different datasets.</p>
+
+    <h2>Key Reasons</h2>
+
+    <h3>1. Standardization</h3>
+    <p>Any normal distribution can be transformed into the <span class="highlight">standard normal distribution</span> by converting values to <strong>z-scores</strong>. The formula for a z-score is:</p>
+    <div class="formula">
+        Z = (X - μ) / σ
+    </div>
+    <p>Here, <span class="highlight">Z</span> represents the number of standard deviations a value <span class="highlight">X</span> is from the mean <span class="highlight">μ</span>.</p>
+
+    <h3>2. Universal Reference</h3>
+    <p>The <span class="highlight">standard normal distribution</span> always has a mean (<span class="highlight">μ</span>) of 0 and a standard deviation (<span class="highlight">σ</span>) of 1. This makes it easier to use <strong>z-tables</strong> or software tools to calculate probabilities.</p>
+
+    <h3>3. Probability Calculations</h3>
+    <p>The standard normal distribution has a predefined <strong>probability density function (PDF)</strong>:</p>
+    <div class="formula">
+        f(z; 0, 1) = (1 / √(2π)) * e^(-z² / 2)
+    </div>
+    <p>Probabilities and cumulative areas under the curve can be derived using this single formula for any z-score.</p>
+
+    <h3>4. Applicability</h3>
+    <p>Standardizing values allows you to:</p>
+    <ul>
         <li>Compare datasets with different scales.</li>
         <li>Compute probabilities and critical values in hypothesis testing.</li>
         <li>Evaluate percentiles in a consistent manner.</li>
-      </ul>
-    </li>
-  </ul>
-  <p>
-    Including this concept ensures learners understand the transition from a general normal distribution <code>N(μ, σ²)</code> 
-    to the <strong>standard normal distribution</strong> <code>N(0, 1)</code>, which is a foundation for many statistical applications.
-  </p>
+    </ul>
+
+    <p>Including this ensures learners understand the transition from a general normal distribution <span class="highlight">N(μ, σ²)</span> to the <span class="highlight">standard normal distribution</span> <span class="highlight">N(0, 1)</span>, which is a foundation for many statistical applications.</p>
+
 </body>
 </html>
